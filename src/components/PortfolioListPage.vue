@@ -1,0 +1,233 @@
+<template>
+    <div>
+    <div>
+        
+        <!--
+        <b-button v-b-modal.modal-center class="ABC">
+        <img src="../assets/img06.png" class="test">
+        </b-button>
+        
+        
+        <b-modal id="modal-center" centered title="Login">
+            <img src="../assets/img06.png">
+        </b-modal>
+        -->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Modal 띄우기
+        </button>
+
+        <!-- Modal -->
+       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+           <div class="modal-dialog" role="document">
+           <div class="modal-content">
+           <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="myModalLabel">Modal 제목</h4>
+       </div>
+       <div class="modal-body">
+          Modal 내용
+       </div>
+       <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+       </div>
+       </div>
+       </div>
+       </div>
+
+
+
+
+
+
+
+
+
+   
+        <img src="../assets/img06.png" class="test1">
+        <img src="../assets/img06.png" class="test2">
+        <img src="../assets/image.jpg" class="test3">
+        <img src="../assets/img06.png" class="test4">
+        <img src="../assets/img06.png" class="test5">
+        <img src="../assets/img06.png" class="test6">
+        <img src="../assets/img06.png" class="test7">
+        <img src="../assets/Left.jpg" class="Left">
+        <img src="../assets/Right.jpg" class="Right">
+    </div>
+
+   <div>
+    <b-button v-b-toggle.sidebar-variant class="MenuButton">Menu bar</b-button>
+    <b-sidebar id="sidebar-variant" title="Sidebar" bg-variant="dark" text-variant="light" shadow>
+      <div class="px-3 py-2">
+        <p>
+          Crasasd
+        </p>
+        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <b-text class = "Lee-link">이상민 포트폴리오</b-text>
+      </div>
+       <div class="px-3 py-3">
+        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <b-text class = "Lee-link">정아연 포트폴리오</b-text>
+      </div>
+   
+       <div class="px-3 py-4">
+        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <b-text class = "Lee-link">조하늘 포트폴리오</b-text>
+      </div>
+      <div class="px-3 py-5">
+        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <b-text class = "Lee-link">박지호 포트폴리오</b-text>
+      </div>
+    </b-sidebar>
+  </div>
+</div>
+</template>
+
+<script> 
+import Content from './Content.vue';
+export default {
+  components: { Content }, 
+   name: "App", 
+   data() { 
+      return { 
+         is_modal_viewed: false, 
+      };
+   },
+}; 
+</script>
+
+
+
+
+
+<style>
+.test{
+    width: 290px;
+    height: 400px;
+    top: 150px;
+    left: 320px;
+    position:fixed;
+}
+.test1{
+    width: 290px;
+    height: 400px;
+    top: 150px;
+    left: 640px;
+    position: fixed;
+}
+.test2{
+    width: 290px;
+    height: 400px;
+    top: 150px;
+    left: 960px;
+    position: fixed;
+}
+.test3{
+    width: 290px;
+    height: 400px;
+    top: 150px;
+    left: 1280px;
+    position: fixed;
+}
+.test4{
+    width: 290px;
+    height: 400px;
+    top: 600px;
+    left: 320px;
+    position: fixed;
+}
+.test5{
+    width: 290px;
+    height: 400px;
+    top: 600px;
+    left: 640px;
+    position: fixed;
+}
+.test6{
+    width: 290px;
+    height: 400px;
+    top: 600px;
+    left: 960px;
+    position: fixed;
+}
+.test7{
+    width: 290px;
+    height: 400px;
+    top: 600px;
+    left: 1280px;
+    position: fixed;
+}
+.Left{
+    width: 100px;
+    height: 200px;
+    top: 480px;
+    left: 100px;
+    position: fixed;
+}
+.Right{
+    width: 100px;
+    height: 200px;
+    top: 480px;
+    left: 1625px;
+    position: fixed;
+
+}
+.MenuButton{
+    top: 0px;
+    left:0px;
+    position: fixed;
+}
+.modal-center.modal-fullsize{
+    width: 100%; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+
+
+}
+</style>
+
+
+<!--
+<template>
+  <div>
+  <b-card-group>
+    <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
+      <b-card-text>
+        This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.
+      </b-card-text>
+      <template #footer>
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </template>
+    </b-card>
+
+    <b-card title="Title" img-src="../assets/img05.png" img-alt="Image" img-top>
+      <img src="../assets/img05.png" class ="test">
+      <b-card-text>
+        This card has supporting text below as a natural lead-in to additional content.
+      </b-card-text>
+    </b-card>
+
+    <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
+      <b-card-text>
+        This is a wider card with supporting text below as a natural lead-in to additional content.
+        This card has even longer content than the first to show that equal height action.
+      </b-card-text>
+      <template #footer>
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </template>
+    </b-card>
+  </b-card-group>
+</div>
+
+</template>
+
+<style scoped>
+    .test{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+
+-->
