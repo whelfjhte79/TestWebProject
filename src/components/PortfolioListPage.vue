@@ -14,8 +14,8 @@
         -->
     
 
-
-
+        <img src="../assets/Public2.jpg" class="public">
+        <img src="../assets/Private.png" class="private">
         <b-button v-b-modal.modal-xl variant="primary">
             <img src="../assets/img06.png" class="test">
         </b-button>
@@ -163,6 +163,21 @@ export default {
     padding: 0;
 
 
+}
+
+.public{
+    width: 95px;
+    height: 31px;
+    position: fixed;
+    top: 65px;
+    left: 1400px;
+}
+.private{
+    width: 100px;
+    height: 65px;
+    position: fixed;
+    top: 50px;
+    left: 1500px;
 }
 </style>
 
