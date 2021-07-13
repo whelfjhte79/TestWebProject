@@ -12,38 +12,17 @@
             <img src="../assets/img06.png">
         </b-modal>
         -->
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-            Modal 띄우기
-        </button>
-
-        <!-- Modal -->
-       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-           <div class="modal-dialog" role="document">
-           <div class="modal-content">
-           <div class="modal-header">
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-           <h4 class="modal-title" id="myModalLabel">Modal 제목</h4>
-       </div>
-       <div class="modal-body">
-          Modal 내용
-       </div>
-       <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-       </div>
-       </div>
-       </div>
-       </div>
+    
 
 
 
-
-
-
-
-
-
-   
+        <b-button v-b-modal.modal-xl variant="primary">
+            <img src="../assets/img06.png" class="test">
+        </b-button>
+        
+        <b-modal id="modal-xl" size="xl" title="Extra Large Modal">
+            TEST <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </b-modal>
         <img src="../assets/img06.png" class="test1">
         <img src="../assets/img06.png" class="test2">
         <img src="../assets/image.jpg" class="test3">
@@ -62,20 +41,20 @@
         <p>
           Crasasd
         </p>
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <router-link to="/PortfolioList"><b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img></router-link>
         <b-text class = "Lee-link">이상민 포트폴리오</b-text>
       </div>
        <div class="px-3 py-3">
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <router-link to="/PortfolioList1"><b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img></router-link>
         <b-text class = "Lee-link">정아연 포트폴리오</b-text>
       </div>
    
        <div class="px-3 py-4">
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <router-link to="/PortfolioList2"><b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img></router-link>
         <b-text class = "Lee-link">조하늘 포트폴리오</b-text>
       </div>
       <div class="px-3 py-5">
-        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        <router-link to="/PortfolioList3"><b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img></router-link>
         <b-text class = "Lee-link">박지호 포트폴리오</b-text>
       </div>
     </b-sidebar>
